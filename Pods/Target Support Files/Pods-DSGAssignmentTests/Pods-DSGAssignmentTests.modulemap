@@ -1,0 +1,6 @@
+framework module Pods_DSGAssignmentTests {
+  umbrella header "Pods-DSGAssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
