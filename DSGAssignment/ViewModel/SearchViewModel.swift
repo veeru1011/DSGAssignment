@@ -54,12 +54,6 @@ class SearchViewModel: NSObject {
     */
     @objc func fetchSearchResult(_ q:String) {
         self.isLoading.value = true
-        guard !q.isEmpty else {
-            self.eventsList.removeAll()
-            self.dataChange.value = Int.random(in: 1..<99999)
-            self.isLoading.value = false
-            return
-        }
         APIManager.shared().getSearchResult(query: q) { (success, info, error) in
             switch success {
             case true :

@@ -47,6 +47,8 @@ class ViewController: UIViewController {
             }
         }
         
+        viewModel.queryString = ""
+        
     }
     
     // MARK: - UI Helper
